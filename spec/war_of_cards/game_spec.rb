@@ -54,8 +54,10 @@ RSpec.describe WarOfCards::Game do
     end
 
     context "when dealing cards" do
-      it "deals 26 cards per player", skip: "TODO" do
-        expect(false).to be(true)
+      subject(:player) { game.players.to_a.sample }
+
+      it "initializes 26 cards per player" do
+        expect(player.hand.size).to be(26)
       end
     end
   end
@@ -72,8 +74,10 @@ RSpec.describe WarOfCards::Game do
     end
 
     context "when dealing cards" do
-      it "deals 13 cards per player", skip: "TODO" do
-        expect(false).to be(true)
+      subject(:player) { game.players.to_a.sample }
+
+      it "deals 13 cards per player" do
+        expect(player.hand.size).to be(13)
       end
     end
   end

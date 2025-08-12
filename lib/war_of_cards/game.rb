@@ -9,6 +9,7 @@ module WarOfCards
       handle_bad_player_count unless valid_player_count?
 
       @round_count = 0
+      deal_cards
     end
 
     def valid_player_count?
@@ -38,6 +39,16 @@ module WarOfCards
       @deck = Deck.new.cards
       @deck.shuffle!
       @deck
+    end
+
+    def cards_per_player = 52 / @players.size
+
+    def deal_cards
+      players.each_with_index do |player, index|
+        start_idx = index * cards_per_player
+        end_idx = start_idx + cards_per_player - 1
+        player.hand = deck[start_idx..end_idx]
+      end
     end
   end
 end
