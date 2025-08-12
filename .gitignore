@@ -1,0 +1,24 @@
+# Exclude bundler and test files
+vendor/
+.bundle/
+coverage/
+.rspec
+.rubocop.yml
+spec/examples.txt
+
+# OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ruby files
+*.gem
+*.rbc
+.ruby-version
+.ruby-gemset
+
+# Project files
+doc/RF\ \- Code\ Challenge\ -\ War\ Card\ Game.pdf
+
