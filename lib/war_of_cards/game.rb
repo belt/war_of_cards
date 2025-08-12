@@ -2,13 +2,13 @@ module WarOfCards
   class Game
     include RubyCards
 
-    attr_reader :player_count, :round_count
+    attr_reader :player_count, :rounds
 
     def initialize(player_count: 2)
       @player_count = player_count
       handle_bad_player_count unless valid_player_count?
 
-      @round_count = 0
+      @rounds = []
       deal_cards
     end
 
@@ -49,6 +49,10 @@ module WarOfCards
         end_idx = start_idx + cards_per_player - 1
         player.hand = deck[start_idx..end_idx]
       end
+    end
+
+    def current_round
+      rounds.last
     end
   end
 end

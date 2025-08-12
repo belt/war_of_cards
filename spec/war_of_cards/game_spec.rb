@@ -9,8 +9,8 @@ RSpec.describe WarOfCards::Game do
         expect(game.player_count).to eq(2)
       end
 
-      it "round_count is 0" do
-        expect(game.round_count).to eq(0)
+      it "number of rounds is 0" do
+        expect(game.rounds.size).to eq(0)
       end
 
       it "has a Deck" do
