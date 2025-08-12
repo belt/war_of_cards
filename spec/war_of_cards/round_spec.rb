@@ -8,10 +8,9 @@ RSpec.describe WarOfCards::Round do
   let(:loosing_player) { (round.players - [winning_player]).to_a.sample }
 
   before do
-    allow(game).to receive(:players).and_return(Set.new(
+    allow(game).to receive_messages(players: Set.new(
       [winning_player, loosing_player]
-    ))
-    allow(game).to receive(:current_round).and_return(round)
+    ), current_round: round)
   end
 
   describe "a standard round" do
@@ -27,6 +26,19 @@ RSpec.describe WarOfCards::Round do
           ).to be_empty
         end
       end
+    end
+  end
+
+  describe "game play" do
+    subject(:winners) { round.winners.first }
+
+    before do
+      winning_player.hand = [WarOfCards::Game::Card.new("A", "hearts")]
+      loosing_player.hand = [WarOfCards::Game::Card.new("2", "spades")]
+    end
+
+    it "determines a winner in a simple round" do
+      expect(winners[:player]).to eq(winning_player)
     end
   end
 end
