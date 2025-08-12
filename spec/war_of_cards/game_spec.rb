@@ -4,9 +4,18 @@ RSpec.describe WarOfCards::Game do
   describe "allows for 2 or 4 players" do
     subject(:game) { described_class.new }
 
-    context "when initalizing with defaults" do
+    context "when initializing with defaults" do
       it "player_count is 2" do
         expect(game.player_count).to eq(2)
+      end
+
+      it "round_count is 0" do
+        expect(game.round_count).to eq(0)
+      end
+
+      it "has a Deck" do
+        # NOTE: WarOfCards::Game::Deck is an array as implemented upstream
+        expect(game.deck).to be_an(Array)
       end
     end
 
@@ -36,7 +45,7 @@ RSpec.describe WarOfCards::Game do
   describe "2-player mode" do
     subject(:game) { described_class.new }
 
-    context "when initalizing players" do
+    context "when initializing players" do
       subject(:players) { game.players }
 
       it "creates 2 players" do
@@ -46,7 +55,7 @@ RSpec.describe WarOfCards::Game do
 
     context "when dealing cards" do
       it "deals 26 cards per player", skip: "TODO" do
-        expect(false).to eq(true)
+        expect(false).to be(true)
       end
     end
   end
@@ -54,7 +63,7 @@ RSpec.describe WarOfCards::Game do
   describe "4-player mode" do
     subject(:game) { described_class.new(player_count: 4) }
 
-    context "when initalizing players" do
+    context "when initializing players" do
       subject(:players) { game.players }
 
       it "creates 4 players" do
@@ -64,7 +73,7 @@ RSpec.describe WarOfCards::Game do
 
     context "when dealing cards" do
       it "deals 13 cards per player", skip: "TODO" do
-        expect(false).to eq(true)
+        expect(false).to be(true)
       end
     end
   end

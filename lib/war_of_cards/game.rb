@@ -1,10 +1,14 @@
 module WarOfCards
   class Game
-    attr_reader :player_count
+    include RubyCards
+
+    attr_reader :player_count, :round_count
 
     def initialize(player_count: 2)
       @player_count = player_count
       handle_bad_player_count unless valid_player_count?
+
+      @round_count = 0
     end
 
     def valid_player_count?
@@ -26,6 +30,14 @@ module WarOfCards
       @players ||= Set.new.tap do |acc|
         (1..player_count).each { |_| acc << Player.new }
       end
+    end
+
+    def deck
+      return @deck if @deck
+
+      @deck = Deck.new.cards
+      @deck.shuffle!
+      @deck
     end
   end
 end
