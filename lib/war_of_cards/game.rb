@@ -1,6 +1,6 @@
 module WarOfCards
   class Game
-    attr_reader :player_count
+    attr_reader :player_count, :players
 
     def initialize(player_count: 2)
       @player_count = player_count
