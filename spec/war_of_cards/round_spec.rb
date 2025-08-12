@@ -50,6 +50,11 @@ RSpec.describe WarOfCards::Round do
         round.winner_takes_cards_in_play(winner: winning_player)
         expect(winning_player).to have_received(:merge_winning).with(cards: a_kind_of(Set))
       end
+
+      it "clears cards in play" do
+        round.winner_takes_cards_in_play(winner: winning_player)
+        expect(round.cards_in_play).to be_empty
+      end
     end
   end
 end
