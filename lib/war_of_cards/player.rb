@@ -1,9 +1,9 @@
 module WarOfCards
   class Player
-    attr_reader :deck
+    attr_accessor :hand
 
-    def initialize(deck: Set.new)
-      @deck = deck || Set.new
+    def initialize(hand: Set.new)
+      @hand = hand || Set.new
     end
   end
 end
