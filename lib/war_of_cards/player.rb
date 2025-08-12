@@ -7,7 +7,9 @@ module WarOfCards
     end
 
     def draw_cards(batch_count: 1)
-      cards = Set.new([hand.first])
+      cards = Set.new(
+        hand.to_a[0..batch_count - 1]
+      )
 
       # return entire hand if player does not have enough cards
       if hand.size <= batch_count

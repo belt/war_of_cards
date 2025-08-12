@@ -9,33 +9,44 @@ RSpec.describe WarOfCards::Player do
         expect(player.hand).to be_a(Set)
       end
     end
+  end
 
-    describe "#draw_cards" do
-      subject(:player) { described_class.new(hand: cards) }
+  describe "#draw_cards" do
+    subject(:player) { described_class.new(hand: cards) }
 
-      let(:cards) do
-        [
-          WarOfCards::Game::Card.new("A", "hearts"),
-          WarOfCards::Game::Card.new("K", "spades")
-        ]
-      end
-      let(:cards_to_draw) { 1 }
-      let(:cards_drawn) { player.draw_cards(batch_count: cards_to_draw) }
+    let(:cards) do
+      Set.new([
+        WarOfCards::Game::Card.new("A", "hearts"),
+        WarOfCards::Game::Card.new("K", "spades"),
+        WarOfCards::Game::Card.new("Q", "clubs")
+      ])
+    end
+    let(:cards_to_draw) { 1 }
+    let(:cards_drawn) { player.draw_cards(batch_count: cards_to_draw) }
 
-      before do
-        player.hand = cards.dup
-      end
+    before do
+      player.hand = cards.dup
+    end
+
+    it "draws one card by default" do
+      expect(cards_drawn).to eq(Set.new([cards.first]))
+    end
+
+    context "when drawing multiple cards" do
+      let(:cards_to_draw) { 2 }
 
       it "draws specified number of cards" do
-        expect(cards_drawn).to eq(Set.new([cards.first]))
+        expect(cards_drawn).to eq(Set.new(
+          cards.to_a[0..cards_to_draw - 1]
+        ))
       end
+    end
 
-      context "when count is higher than remaining cards" do
-        let(:cards_to_draw) { 5 }
+    context "when count is higher than remaining cards" do
+      let(:cards_to_draw) { 5 }
 
-        it "draws all remaining cards" do
-          expect(cards_drawn).to eq(cards)
-        end
+      it "draws all remaining cards" do
+        expect(cards_drawn).to eq(cards)
       end
     end
   end
