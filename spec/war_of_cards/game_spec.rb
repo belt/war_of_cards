@@ -22,7 +22,7 @@ RSpec.describe WarOfCards::Game do
       subject(:game) { described_class.new(player_count: 3) }
 
       it "throws an error" do
-        expect { game }.to raise_error(WarOfCards::Game::Error)
+        expect { game }.to raise_error(WarOfCards::Error)
       end
     end
   end
