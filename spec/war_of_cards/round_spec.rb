@@ -22,7 +22,7 @@ RSpec.describe WarOfCards::Round do
       it "drawing cards removes cards from hands", :aggregate_failures do
         round.cards_in_play.each do |player_hand|
           expect(
-            round.cards_in_play.map { |play| play[:player] }.map(&:hand) & player_hand[:card]
+            round.cards_in_play.map { |play| play[:player] }.map(&:hand) & [player_hand[:card]]
           ).to be_empty
         end
       end
