@@ -21,8 +21,34 @@ RSpec.describe WarOfCards::Game do
     context "when initializing to other" do
       subject(:game) { described_class.new(player_count: 3) }
 
-      it "throws an error" do
+      it "throws an error when player_count == 3" do
         expect { game }.to raise_error(WarOfCards::Error)
+      end
+
+      it "throws an error when player_count == '2'" do
+        expect {
+          described_class.new(player_count: "2")
+        }.to raise_error(WarOfCards::Error)
+      end
+    end
+  end
+
+  describe "2-player mode" do
+    subject(:game) { described_class.new }
+
+    context "when dealing cards" do
+      it "deals 26 cards per player", skip: "TODO" do
+        expect(false).to eq(true)
+      end
+    end
+  end
+
+  describe "4-player mode" do
+    subject(:game) { described_class.new(player_count: 4) }
+
+    context "when dealing cards" do
+      it "deals 13 cards per player", skip: "TODO" do
+        expect(false).to eq(true)
       end
     end
   end
