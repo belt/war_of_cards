@@ -1,3 +1,5 @@
+require_relative "../lib/war_of_cards"
+require "pry-byebug"
 require "rspec"
 
 RSpec.configure do |config|
