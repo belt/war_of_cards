@@ -27,10 +27,10 @@ RSpec.describe WarOfCards::Player do
       end
 
       it "draws specified number of cards" do
-        expect(cards_drawn).to eq([cards.first])
+        expect(cards_drawn).to eq(Set.new([cards.first]))
       end
 
-      context "when count is higher" do
+      context "when count is higher than remaining cards" do
         let(:cards_to_draw) { 5 }
 
         it "draws all remaining cards" do

@@ -3,13 +3,27 @@ module WarOfCards
     attr_accessor :hand
 
     def initialize(hand: Set.new)
-      @hand = hand || Set.new
+      @hand = Set.new(hand || [])
     end
 
     def draw_cards(batch_count: 1)
-      return hand.shift(hand.size) if hand.size <= batch_count
+      cards = Set.new([hand.first])
 
-      hand.shift(batch_count)
+      # return entire hand if player does not have enough cards
+      if hand.size <= batch_count
+        hand = @hand
+        @hand = Set.new
+        return hand
+      end
+
+      # remove cards from hand
+      @hand -= [cards]
+
+      cards
+    end
+
+    def merge_winning(cards:)
+      hand.merge(Set.new(cards))
     end
   end
 end

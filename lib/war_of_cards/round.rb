@@ -23,5 +23,10 @@ module WarOfCards
       highest_card = cards_in_play.map { |hand| hand[:card_value] }.max
       cards_in_play.select { |hand| hand[:card_value] == highest_card }
     end
+
+    def winner_takes_cards_in_play(winner:)
+      winner.merge_winning(cards: Set.new(cards_in_play.map { |play| play[:card] }))
+      @cards_in_play = Set.new
+    end
   end
 end

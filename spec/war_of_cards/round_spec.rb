@@ -33,12 +33,23 @@ RSpec.describe WarOfCards::Round do
     subject(:winners) { round.winners.first }
 
     before do
-      winning_player.hand = [WarOfCards::Game::Card.new("A", "hearts")]
-      loosing_player.hand = [WarOfCards::Game::Card.new("2", "spades")]
+      winning_player.hand = Set.new([WarOfCards::Game::Card.new("A", "hearts")])
+      loosing_player.hand = Set.new([WarOfCards::Game::Card.new("2", "spades")])
+
+      allow(winning_player).to receive(:merge_winning).with(
+        cards: a_kind_of(Set)
+      ).and_call_original
     end
 
     it "determines a winner in a simple round" do
       expect(winners[:player]).to eq(winning_player)
+    end
+
+    context "when there is a single winner" do
+      it "gives cards in play to winning player" do
+        round.winner_takes_cards_in_play(winner: winning_player)
+        expect(winning_player).to have_received(:merge_winning).with(cards: a_kind_of(Set))
+      end
     end
   end
 end
