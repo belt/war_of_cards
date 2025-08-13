@@ -81,4 +81,18 @@ RSpec.describe WarOfCards::Game do
       end
     end
   end
+
+  describe "#game_over?" do
+    subject(:game) { described_class.new(player_count: 4) }
+
+    before do
+      game.players.to_a[1..].each do |player|
+        player.status = :lost
+      end
+    end
+
+    it "yields true when there is only 1 player sitting" do
+      expect(game.game_over?).to be(true)
+    end
+  end
 end

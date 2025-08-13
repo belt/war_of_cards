@@ -13,9 +13,7 @@ module WarOfCards
     end
 
     def valid_player_count?
-      return false unless [2, 4].include?(player_count)
-
-      true
+      [2, 4].include?(player_count)
     end
 
     # TODO: I18n.t bad player count
@@ -54,6 +52,10 @@ module WarOfCards
 
     def current_round
       rounds.last
+    end
+
+    def game_over?
+      players.count { |player| player.status == :sitting } == 1
     end
   end
 end
