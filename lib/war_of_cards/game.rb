@@ -18,6 +18,7 @@ module WarOfCards
       true
     end
 
+    # TODO: I18n.t bad player count
     def handle_bad_player_count
       raise WarOfCards::Error.new(
         [
@@ -29,7 +30,7 @@ module WarOfCards
 
     def players
       @players ||= Set.new.tap do |acc|
-        (1..player_count).each { |_| acc << Player.new }
+        (1..player_count).each { |_| acc << Player.new(status: :sitting) }
       end
     end
 

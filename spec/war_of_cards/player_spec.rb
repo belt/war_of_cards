@@ -9,6 +9,28 @@ RSpec.describe WarOfCards::Player do
         expect(player.hand).to be_a(Set)
       end
     end
+
+    context "when initializing with a status" do
+      subject(:player) { described_class.new(status: :sitting) }
+
+      it "records valid status" do
+        expect(player.status).to eq(:sitting)
+      end
+
+      it "validates status" do
+        WarOfCards::Player::VALID_STATUSII.each do |status|
+          player.status = status
+          expect(player.valid_status?).to be(true)
+        end
+      end
+
+      it "raises an error on invalid status" do
+        player.status = :invalid
+        expect {
+          player.handle_invalid_status
+        }.to raise_error(WarOfCards::Error)
+      end
+    end
   end
 
   describe "#draw_cards" do
@@ -36,13 +58,23 @@ RSpec.describe WarOfCards::Player do
           cards.to_a[0..cards_to_draw - 1]
         ))
       end
+
+      it "removes cards from hand when drawing cards" do
+        expect(cards_drawn & player.hand).to be_empty
+      end
     end
 
-    context "when count is higher than remaining cards" do
+    context "when batch_count is higher than remaining cards" do
       let(:cards_to_draw) { 5 }
 
       it "draws all remaining cards" do
         expect(cards_drawn).to eq(cards)
+      end
+
+      it "has lost if a player can not draw batch_count cards" do
+        expect {
+          player.draw_cards(batch_count: 6)
+        }.to change(player, :status).to(:lost)
       end
     end
   end
