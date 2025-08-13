@@ -37,26 +37,26 @@ RSpec.describe WarOfCards::Player do
     subject(:player) { described_class.new(hand: cards) }
 
     let(:cards) do
-      Set.new([
+      [
         WarOfCards::Game::Card.new("A", "hearts"),
         WarOfCards::Game::Card.new("K", "spades"),
         WarOfCards::Game::Card.new("Q", "clubs")
-      ])
+      ].to_set
     end
     let(:cards_to_draw) { 1 }
     let(:cards_drawn) { player.draw_cards(batch_count: cards_to_draw) }
 
     it "draws one card by default" do
-      expect(cards_drawn).to eq(Set.new([cards.first]))
+      expect(cards_drawn).to eq([cards.first].to_set)
     end
 
     context "when drawing multiple cards" do
       let(:cards_to_draw) { 2 }
 
       it "draws specified number of cards" do
-        expect(cards_drawn).to eq(Set.new(
-          cards.to_a[0..cards_to_draw - 1]
-        ))
+        expect(cards_drawn).to eq(
+          cards.to_a[0..cards_to_draw - 1].to_set
+        )
       end
 
       it "removes cards from hand when drawing cards" do
@@ -83,19 +83,19 @@ RSpec.describe WarOfCards::Player do
     subject(:winning_player) { described_class.new(hand: winning_cards) }
 
     let(:winning_cards) do
-      Set.new([
+      [
         WarOfCards::Game::Card.new("A", "hearts"),
         WarOfCards::Game::Card.new("K", "spades"),
         WarOfCards::Game::Card.new("Q", "clubs")
-      ])
+      ].to_set
     end
 
     let(:cards_in_play) do
-      Set.new([
+      [
         WarOfCards::Game::Card.new("J", "diamonds"),
         WarOfCards::Game::Card.new("10", "clubs"),
         WarOfCards::Game::Card.new("9", "clubs")
-      ])
+      ].to_set
     end
 
     context "when player has winning hand" do

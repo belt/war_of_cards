@@ -12,9 +12,7 @@ module WarOfCards
 
     # TODO: s/batch_count/draw_count/g
     def draw_cards(batch_count: 1)
-      cards = Set.new(
-        hand.to_a[0..batch_count - 1]
-      )
+      cards = hand.to_a[0..batch_count - 1].to_set
 
       # remove cards from hand
       @hand = hand.to_set.subtract(cards)
@@ -26,7 +24,7 @@ module WarOfCards
     end
 
     def merge_winning(cards:)
-      hand.merge(Set.new(cards))
+      hand.merge(cards.to_set)
     end
 
     def valid_status?

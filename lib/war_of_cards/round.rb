@@ -35,7 +35,7 @@ module WarOfCards
     end
 
     def winner_takes_cards_in_play(winner:)
-      winner.merge_winning(cards: Set.new(cards_in_play.map { |play| play[:card] }))
+      winner.merge_winning(cards: cards_in_play.map { |play| play[:card] }.to_set)
       @cards_in_play = Set.new
     end
 
