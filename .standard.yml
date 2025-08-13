@@ -1,0 +1,6 @@
+ruby_version: 3.4
+plugins:
+  - standard-performance
+  - standard-rspec
+ignore:
+  - 'coverage/**/*'
