@@ -1,8 +1,14 @@
 source "https://rubygems.org"
 
+# main
+gem "activesupport"
 gem "rubycards"
 gem "pry-byebug"
 gem "zeitwerk"
+
+# CLI
+gem "optparse"
+gem "pastel"
 
 group :development, :test do
   gem "fasterer", require: false
@@ -14,3 +20,4 @@ group :development, :test do
   gem "standard-rspec", require: false
   gem "standardrb", require: false
 end
+
