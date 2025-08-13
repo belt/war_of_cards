@@ -14,6 +14,9 @@ GEM
     domain_name (0.6.20240107)
     fasterer (0.11.0)
       ruby_parser (>= 3.19.1)
+    gem_guard (1.1.2)
+      json (~> 2.0)
+      thor (~> 1.0)
     http-cookie (1.0.8)
       domain_name (~> 0.5)
     json (2.13.2)
@@ -154,6 +157,7 @@ GEM
       rubocop-rspec_rails (~> 2.31)
     standardrb (1.0.1)
       standard
+    thor (1.4.0)
     unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
@@ -173,6 +177,7 @@ PLATFORMS
 
 DEPENDENCIES
   fasterer
+  gem_guard
   pry-byebug
   rspec
   rspec-performance

@@ -1,0 +1,1411 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "ruby-project-sbom",
+  "documentNamespace": "https://gem-guard.dev/ruby-project/2025-08-13T15:44:42Z",
+  "creationInfo": {
+    "created": "2025-08-13T15:44:42Z",
+    "creators": [
+      "Tool: gem_guard-1.1.2"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-ruby-project",
+      "name": "ruby-project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-addressable",
+      "name": "addressable",
+      "versionInfo": "2.8.7",
+      "downloadLocation": "https://rubygems.org/downloads/addressable-2.8.7.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/addressable",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/addressable@2.8.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ast",
+      "name": "ast",
+      "versionInfo": "2.4.3",
+      "downloadLocation": "https://rubygems.org/downloads/ast-2.4.3.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/ast",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/ast@2.4.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-base64",
+      "name": "base64",
+      "versionInfo": "0.3.0",
+      "downloadLocation": "https://rubygems.org/downloads/base64-0.3.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/base64",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/base64@0.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-byebug",
+      "name": "byebug",
+      "versionInfo": "12.0.0",
+      "downloadLocation": "https://rubygems.org/downloads/byebug-12.0.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/byebug",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/byebug@12.0.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-coderay",
+      "name": "coderay",
+      "versionInfo": "1.1.3",
+      "downloadLocation": "https://rubygems.org/downloads/coderay-1.1.3.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/coderay",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/coderay@1.1.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-colored",
+      "name": "colored",
+      "versionInfo": "1.2",
+      "downloadLocation": "https://rubygems.org/downloads/colored-1.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/colored",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/colored@1.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-connection_pool",
+      "name": "connection_pool",
+      "versionInfo": "2.5.3",
+      "downloadLocation": "https://rubygems.org/downloads/connection_pool-2.5.3.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/connection_pool",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/connection_pool@2.5.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-diff-lcs",
+      "name": "diff-lcs",
+      "versionInfo": "1.6.2",
+      "downloadLocation": "https://rubygems.org/downloads/diff-lcs-1.6.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/diff-lcs",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/diff-lcs@1.6.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-docile",
+      "name": "docile",
+      "versionInfo": "1.4.1",
+      "downloadLocation": "https://rubygems.org/downloads/docile-1.4.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/docile",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/docile@1.4.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-domain_name",
+      "name": "domain_name",
+      "versionInfo": "0.6.20240107",
+      "downloadLocation": "https://rubygems.org/downloads/domain_name-0.6.20240107.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/domain_name",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/domain_name@0.6.20240107"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-fasterer",
+      "name": "fasterer",
+      "versionInfo": "0.11.0",
+      "downloadLocation": "https://rubygems.org/downloads/fasterer-0.11.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/fasterer",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/fasterer@0.11.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gem_guard",
+      "name": "gem_guard",
+      "versionInfo": "1.1.2",
+      "downloadLocation": "https://rubygems.org/downloads/gem_guard-1.1.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/gem_guard",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/gem_guard@1.1.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-http-cookie",
+      "name": "http-cookie",
+      "versionInfo": "1.0.8",
+      "downloadLocation": "https://rubygems.org/downloads/http-cookie-1.0.8.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/http-cookie",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/http-cookie@1.0.8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-json",
+      "name": "json",
+      "versionInfo": "2.13.2",
+      "downloadLocation": "https://rubygems.org/downloads/json-2.13.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/json",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/json@2.13.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-language_server-protocol",
+      "name": "language_server-protocol",
+      "versionInfo": "3.17.0.5",
+      "downloadLocation": "https://rubygems.org/downloads/language_server-protocol-3.17.0.5.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/language_server-protocol",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/language_server-protocol@3.17.0.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-lint_roller",
+      "name": "lint_roller",
+      "versionInfo": "1.1.0",
+      "downloadLocation": "https://rubygems.org/downloads/lint_roller-1.1.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/lint_roller",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/lint_roller@1.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-logger",
+      "name": "logger",
+      "versionInfo": "1.7.0",
+      "downloadLocation": "https://rubygems.org/downloads/logger-1.7.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/logger",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/logger@1.7.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mechanize",
+      "name": "mechanize",
+      "versionInfo": "2.14.0",
+      "downloadLocation": "https://rubygems.org/downloads/mechanize-2.14.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/mechanize",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/mechanize@2.14.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-method_source",
+      "name": "method_source",
+      "versionInfo": "1.1.0",
+      "downloadLocation": "https://rubygems.org/downloads/method_source-1.1.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/method_source",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/method_source@1.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mime-types",
+      "name": "mime-types",
+      "versionInfo": "3.7.0",
+      "downloadLocation": "https://rubygems.org/downloads/mime-types-3.7.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/mime-types",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/mime-types@3.7.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mime-types-data",
+      "name": "mime-types-data",
+      "versionInfo": "3.2025.0805",
+      "downloadLocation": "https://rubygems.org/downloads/mime-types-data-3.2025.0805.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/mime-types-data",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/mime-types-data@3.2025.0805"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-net-http-digest_auth",
+      "name": "net-http-digest_auth",
+      "versionInfo": "1.4.1",
+      "downloadLocation": "https://rubygems.org/downloads/net-http-digest_auth-1.4.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/net-http-digest_auth",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/net-http-digest_auth@1.4.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-net-http-persistent",
+      "name": "net-http-persistent",
+      "versionInfo": "4.0.6",
+      "downloadLocation": "https://rubygems.org/downloads/net-http-persistent-4.0.6.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/net-http-persistent",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/net-http-persistent@4.0.6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-nkf",
+      "name": "nkf",
+      "versionInfo": "0.2.0",
+      "downloadLocation": "https://rubygems.org/downloads/nkf-0.2.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/nkf",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/nkf@0.2.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-nokogiri",
+      "name": "nokogiri",
+      "versionInfo": "1.18.9",
+      "downloadLocation": "https://rubygems.org/downloads/nokogiri-1.18.9.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/nokogiri",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/nokogiri@1.18.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-parallel",
+      "name": "parallel",
+      "versionInfo": "1.27.0",
+      "downloadLocation": "https://rubygems.org/downloads/parallel-1.27.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/parallel",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/parallel@1.27.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-parser",
+      "name": "parser",
+      "versionInfo": "3.3.9.0",
+      "downloadLocation": "https://rubygems.org/downloads/parser-3.3.9.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/parser",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/parser@3.3.9.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-prism",
+      "name": "prism",
+      "versionInfo": "1.4.0",
+      "downloadLocation": "https://rubygems.org/downloads/prism-1.4.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/prism",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/prism@1.4.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pry",
+      "name": "pry",
+      "versionInfo": "0.15.2",
+      "downloadLocation": "https://rubygems.org/downloads/pry-0.15.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/pry",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/pry@0.15.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pry-byebug",
+      "name": "pry-byebug",
+      "versionInfo": "3.11.0",
+      "downloadLocation": "https://rubygems.org/downloads/pry-byebug-3.11.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/pry-byebug",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/pry-byebug@3.11.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-public_suffix",
+      "name": "public_suffix",
+      "versionInfo": "6.0.2",
+      "downloadLocation": "https://rubygems.org/downloads/public_suffix-6.0.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/public_suffix",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/public_suffix@6.0.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-racc",
+      "name": "racc",
+      "versionInfo": "1.8.1",
+      "downloadLocation": "https://rubygems.org/downloads/racc-1.8.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/racc",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/racc@1.8.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rainbow",
+      "name": "rainbow",
+      "versionInfo": "3.1.1",
+      "downloadLocation": "https://rubygems.org/downloads/rainbow-3.1.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rainbow",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rainbow@3.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-regexp_parser",
+      "name": "regexp_parser",
+      "versionInfo": "2.11.1",
+      "downloadLocation": "https://rubygems.org/downloads/regexp_parser-2.11.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/regexp_parser",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/regexp_parser@2.11.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rspec",
+      "name": "rspec",
+      "versionInfo": "3.13.1",
+      "downloadLocation": "https://rubygems.org/downloads/rspec-3.13.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rspec",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rspec@3.13.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rspec-core",
+      "name": "rspec-core",
+      "versionInfo": "3.13.5",
+      "downloadLocation": "https://rubygems.org/downloads/rspec-core-3.13.5.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rspec-core",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rspec-core@3.13.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rspec-expectations",
+      "name": "rspec-expectations",
+      "versionInfo": "3.13.5",
+      "downloadLocation": "https://rubygems.org/downloads/rspec-expectations-3.13.5.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rspec-expectations",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rspec-expectations@3.13.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rspec-mocks",
+      "name": "rspec-mocks",
+      "versionInfo": "3.13.5",
+      "downloadLocation": "https://rubygems.org/downloads/rspec-mocks-3.13.5.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rspec-mocks",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rspec-mocks@3.13.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rspec-performance",
+      "name": "rspec-performance",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "https://rubygems.org/downloads/rspec-performance-0.1.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rspec-performance",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rspec-performance@0.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rspec-support",
+      "name": "rspec-support",
+      "versionInfo": "3.13.4",
+      "downloadLocation": "https://rubygems.org/downloads/rspec-support-3.13.4.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rspec-support",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rspec-support@3.13.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop",
+      "name": "rubocop",
+      "versionInfo": "1.75.8",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-1.75.8.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop@1.75.8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop-ast",
+      "name": "rubocop-ast",
+      "versionInfo": "1.46.0",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-ast-1.46.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop-ast",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop-ast@1.46.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop-capybara",
+      "name": "rubocop-capybara",
+      "versionInfo": "2.22.1",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-capybara-2.22.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop-capybara",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop-capybara@2.22.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop-factory_bot",
+      "name": "rubocop-factory_bot",
+      "versionInfo": "2.27.1",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-factory_bot-2.27.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop-factory_bot",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop-factory_bot@2.27.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop-performance",
+      "name": "rubocop-performance",
+      "versionInfo": "1.25.0",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-performance-1.25.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop-performance",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop-performance@1.25.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop-rspec",
+      "name": "rubocop-rspec",
+      "versionInfo": "3.6.0",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-rspec-3.6.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop-rspec",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop-rspec@3.6.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubocop-rspec_rails",
+      "name": "rubocop-rspec_rails",
+      "versionInfo": "2.31.0",
+      "downloadLocation": "https://rubygems.org/downloads/rubocop-rspec_rails-2.31.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubocop-rspec_rails",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubocop-rspec_rails@2.31.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ruby-progressbar",
+      "name": "ruby-progressbar",
+      "versionInfo": "1.13.0",
+      "downloadLocation": "https://rubygems.org/downloads/ruby-progressbar-1.13.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/ruby-progressbar",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/ruby-progressbar@1.13.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ruby_parser",
+      "name": "ruby_parser",
+      "versionInfo": "3.21.1",
+      "downloadLocation": "https://rubygems.org/downloads/ruby_parser-3.21.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/ruby_parser",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/ruby_parser@3.21.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubycards",
+      "name": "rubycards",
+      "versionInfo": "0.0.4",
+      "downloadLocation": "https://rubygems.org/downloads/rubycards-0.0.4.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubycards",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubycards@0.0.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rubyntlm",
+      "name": "rubyntlm",
+      "versionInfo": "0.6.5",
+      "downloadLocation": "https://rubygems.org/downloads/rubyntlm-0.6.5.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/rubyntlm",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubyntlm@0.6.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sexp_processor",
+      "name": "sexp_processor",
+      "versionInfo": "4.17.3",
+      "downloadLocation": "https://rubygems.org/downloads/sexp_processor-4.17.3.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/sexp_processor",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/sexp_processor@4.17.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-simplecov",
+      "name": "simplecov",
+      "versionInfo": "0.22.0",
+      "downloadLocation": "https://rubygems.org/downloads/simplecov-0.22.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/simplecov",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/simplecov@0.22.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-simplecov-html",
+      "name": "simplecov-html",
+      "versionInfo": "0.13.2",
+      "downloadLocation": "https://rubygems.org/downloads/simplecov-html-0.13.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/simplecov-html",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/simplecov-html@0.13.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-simplecov_json_formatter",
+      "name": "simplecov_json_formatter",
+      "versionInfo": "0.1.4",
+      "downloadLocation": "https://rubygems.org/downloads/simplecov_json_formatter-0.1.4.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/simplecov_json_formatter",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/simplecov_json_formatter@0.1.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-standard",
+      "name": "standard",
+      "versionInfo": "1.50.0",
+      "downloadLocation": "https://rubygems.org/downloads/standard-1.50.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/standard",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/standard@1.50.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-standard-custom",
+      "name": "standard-custom",
+      "versionInfo": "1.0.2",
+      "downloadLocation": "https://rubygems.org/downloads/standard-custom-1.0.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/standard-custom",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/standard-custom@1.0.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-standard-performance",
+      "name": "standard-performance",
+      "versionInfo": "1.8.0",
+      "downloadLocation": "https://rubygems.org/downloads/standard-performance-1.8.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/standard-performance",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/standard-performance@1.8.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-standard-rspec",
+      "name": "standard-rspec",
+      "versionInfo": "0.3.1",
+      "downloadLocation": "https://rubygems.org/downloads/standard-rspec-0.3.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/standard-rspec",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/standard-rspec@0.3.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-standardrb",
+      "name": "standardrb",
+      "versionInfo": "1.0.1",
+      "downloadLocation": "https://rubygems.org/downloads/standardrb-1.0.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/standardrb",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/standardrb@1.0.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-thor",
+      "name": "thor",
+      "versionInfo": "1.4.0",
+      "downloadLocation": "https://rubygems.org/downloads/thor-1.4.0.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/thor",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/thor@1.4.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-unicode-display_width",
+      "name": "unicode-display_width",
+      "versionInfo": "3.1.4",
+      "downloadLocation": "https://rubygems.org/downloads/unicode-display_width-3.1.4.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/unicode-display_width",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/unicode-display_width@3.1.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-unicode-emoji",
+      "name": "unicode-emoji",
+      "versionInfo": "4.0.4",
+      "downloadLocation": "https://rubygems.org/downloads/unicode-emoji-4.0.4.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/unicode-emoji",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/unicode-emoji@4.0.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-webrick",
+      "name": "webrick",
+      "versionInfo": "1.9.1",
+      "downloadLocation": "https://rubygems.org/downloads/webrick-1.9.1.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/webrick",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/webrick@1.9.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-webrobots",
+      "name": "webrobots",
+      "versionInfo": "0.1.2",
+      "downloadLocation": "https://rubygems.org/downloads/webrobots-0.1.2.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/webrobots",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/webrobots@0.1.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-zeitwerk",
+      "name": "zeitwerk",
+      "versionInfo": "2.7.3",
+      "downloadLocation": "https://rubygems.org/downloads/zeitwerk-2.7.3.gem",
+      "filesAnalyzed": false,
+      "homepage": "https://rubygems.org/gems/zeitwerk",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/zeitwerk@2.7.3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-addressable"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ast"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-base64"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-byebug"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-coderay"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-colored"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-connection_pool"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-diff-lcs"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-docile"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-domain_name"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-fasterer"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-gem_guard"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-http-cookie"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-json"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-language_server-protocol"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-lint_roller"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-logger"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-mechanize"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-method_source"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-mime-types"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-mime-types-data"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-net-http-digest_auth"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-net-http-persistent"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-nkf"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-nokogiri"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-parallel"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-parser"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-prism"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-pry"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-pry-byebug"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-public_suffix"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-racc"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rainbow"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-regexp_parser"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rspec"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rspec-core"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rspec-expectations"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rspec-mocks"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rspec-performance"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rspec-support"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop-ast"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop-capybara"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop-factory_bot"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop-performance"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop-rspec"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubocop-rspec_rails"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ruby-progressbar"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ruby_parser"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubycards"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rubyntlm"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-sexp_processor"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-simplecov"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-simplecov-html"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-simplecov_json_formatter"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-standard"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-standard-custom"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-standard-performance"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-standard-rspec"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-standardrb"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-thor"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-unicode-display_width"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-unicode-emoji"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-webrick"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-webrobots"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-zeitwerk"
+    }
+  ]
+}
