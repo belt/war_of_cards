@@ -5,6 +5,7 @@ A command-line implementation of the classic War card game (in Ruby).
 ## How to Run
 
 ```bash
+bundle
 ./bin/game_of_war.rb
 ```
 
