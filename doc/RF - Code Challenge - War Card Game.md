@@ -1,13 +1,13 @@
-h1. Build a War Card Game
+# Build a War Card Game
 
-h2. Instructions
+## Instructions
 
 Your task is to build a version of the War card game in Ruby that can be run on the
 command line. There should not be any UI component to the game, and the entire
 project should take two hours or less. Please build the game in accordance with the
 rules below.
 
-h3. Rules
+### Rules
 
 1. A standard 52-card playing card deck is divided evenly amongst two or four
    players. (Each player’s deck is 26 cards for a two-player game, 13 cards for
@@ -17,25 +17,21 @@ h3. Rules
    all 52 cards, at which point the game ends and the player with all the cards
    is the winner.
 
-3.  If there are more than two players, then a player can be eliminated if they
+3. If there are more than two players, then a player can be eliminated if they
     run out of cards. The game continues as usual with the remaining players
     until there is a winner.
 
 4. A round consists of the following:
-
-  A. Each player puts into play the top card of their deck face up.
-
-  B. The player with the face up card of the highest rank wins all the cards in
+  a. Each player puts into play the top card of their deck face up.
+  b. The player with the face up card of the highest rank wins all the cards in
   play, and places them at the bottom of their deck in any order. This
   concludes the round.
-
-  C. If two or more players have equal highest-rank face up cards, those
+  c. If two or more players have equal highest-rank face up cards, those
   players put into play three cards from the top of their decks face down, then
   repeat steps A and B above. If two or more players have equal highest-rank
   face up cards again, repeat step C as many times as needed for the round to
   conclude.
-
-  D. If any player would run out of cards in the middle of a round, then that
+  d. If any player would run out of cards in the middle of a round, then that
   player plays their last card face up, and that card serves as the player’s
   face up card for the remainder of the round.
 
@@ -44,7 +40,7 @@ h3. Rules
 
 6. Suits (hearts, diamonds, spades, clubs) are not relevant to the game.
 
-h2. Submission
+## Submission
 
 Please push your completed code to Github and provide the repository URL within
 24 hours of receiving this challenge. Please provide instructions for how to
