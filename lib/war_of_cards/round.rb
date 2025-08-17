@@ -15,23 +15,26 @@ module WarOfCards
     def cards_in_play
       @cards_in_play ||= players.each_with_object(Set.new) do |player, acc|
         card = player.draw_cards.first
-        acc.add({player: player, card: card, card_value: card_value(card)})
+        acc.add(
+          {
+            player: player, card: card,
+            card_value: card_value(card), facing: :up
+          }
+        )
       end
     end
 
-    def highest_card = cards_in_play.map { |hand| hand[:card_value] }.max
-
-    # TODO: better name
-    def tie_breaker
-      tie_breaker_value = cards_in_play.each_with_object(Hash.new(0)) { |hash, counts|
-        counts[hash[:card_value]] += 1
-      }.reject { |_k, val| val > 1 }.min_by { |(card_val, val)| [-val, -card_val] }&.first
-      cards_in_play.detect { |hand| hand[:card_value] == tie_breaker_value }
+    def highest_card
+      cards_in_play.select { |hand| hand[:facing] == :up }.map { |hand|
+        hand[:card_value]
+      }.max
     end
 
     def winners
       highest_value = highest_card
-      cards_in_play.select { |hand| hand[:card_value] == highest_value }.to_set
+      cards_in_play.select { |hand| hand[:facing] == :up }.select { |hand|
+        hand[:card_value] == highest_value
+      }.to_set
     end
 
     def winner_takes_cards_in_play(winner:)
@@ -42,12 +45,30 @@ module WarOfCards
     def break_ties
       return unless winners.size > 1
 
-      tie_breaker_cards = players.each_with_object(Set.new) do |player, acc|
-        cards = player.draw_cards(batch_count: 3)
-        cards.each do |card|
-          acc.add({player: player, card: card, card_value: card_value(card)})
+      tie_breaker_cards = winners.each_with_object(Set.new) do |player_hand, acc|
+        player = player_hand[:player]
+        cards = player.draw_cards(batch_count: 4)
+        card = cards.to_a.last
+        cards.delete(card)
+        acc.add(
+          {
+            player: player, card: card,
+            card_value: card_value(card), facing: :up
+          }
+        )
+        cards.to_a.each do |card|
+          acc.add(
+            {
+              player: player, card: card,
+              card_value: card_value(card), facing: :down
+            }
+          )
         end
       end
+
+      # place all cards_in_play face down to avoid detecting the highest_card
+      # already played i.e. the catalyst for this battle
+      cards_in_play.each { |player_hand| player_hand[:facing] = :down }
 
       @cards_in_play.merge(tie_breaker_cards)
     end
