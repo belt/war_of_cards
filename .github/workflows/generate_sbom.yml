@@ -1,0 +1,48 @@
+---
+name: Generate SBOM
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate_sbom:
+    # runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install gem_guard
+        run: gem install gem_guard
+
+      # TODO: define github.token
+      # TODO: uncomment to set ACTIONS_RUNTIME_TOKEN
+      # NOTE: required for uploading artifacts
+      # - name: Export ACTIONS_RUNTIME_TOKEN
+      #   run: |
+      #     echo "ACTIONS_RUNTIME_TOKEN=${{ github.token }}" >> $GITHUB_ENV
+
+      - name: Generate SPDX SBOM
+        run: gem_guard sbom --format spdx --output sbom.spdx.json
+
+      - name: Generate CycloneDX SBOM
+        run: gem_guard sbom --format cyclonedx --output bom.cdx.json
+
+      # TODO: uncomment after defining github.token
+      # - name: Upload SBOM artifacts
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: sbom-artifacts
+      #     path: |
+      #       sbom.spdx.json
+      #       bom.cdx.json
